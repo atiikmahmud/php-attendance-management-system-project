@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto:400,700,900&display=swap');
+
+
+/*==============================================
+        01    scrollbar Area CSS
+===============================================*/
+
+html {
+    --scrollbarBG: darkgray;
+    --thumbBG: #1A2236;
+}
+
+body::-webkit-scrollbar,
+.monthly-dates::-webkit-scrollbar {
+    width: 11px;
+    padding: 20px;
+}
+
+body,
+.monthly-dates {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track,
+.monthly-dates::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+    
+}
+
+body::-webkit-scrollbar-thumb,
+.monthly-dates::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+i.far.fa-calendar-alt {
+    background-color: #FEA74C;
+    padding: 7px 5px 11px 9px;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    margin-right: 4px;
+}
+
+div#clock {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 36px;
+}
+
+
+.table td,
+.table th {
+    border-top: 1px solid #424A5E
+}
+
+.table thead th {
+    border-bottom: 1px solid #424A5E
+}
+
+.navbar {
+    background-color: #2E364A;
+
+}
+
+.navbar span {
+    font-size: 12px;
+}
+
+.navbar img {
+    border-color: darkgray;
+}
+
+.body-area {
+    height: 80.8vh;
+}
+
+.col-md-2 {
+    height: 85.6vh;
+    /* height: 91.6vh; */
+    padding: 15px;
+
+}
+
+
+.side-bar {
+    overflow: hidden;
+}
+
+.in-body-area {
+    height: 85.6vh;
+    overflow: hidden;
+    overflow-y: auto
+}
+
+.side-bar ul {
+    list-style-type: none;
+
+}
+
+
+.side-bar ul li {
+    margin: 10px;
+    text-align: center;
+    border: 2px solid #424A5E;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.side-bar ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px 0px;
+    font-family: 'Roboto';
+    display: inline-block
+}
+
+table th {
+    font-family: 'Roboto';
+}
+
+table td {
+    font-family: 'Lato';
+}
+
+table td a {
+    color: white;
+}
+
+table .info {
+    background-color: #0069D9;
+    padding: 7px 5px 5px 8px;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+
+}
+
+table .edit {
+    background-color: #3ACB9B;
+    padding: 7px 5px 5px 8px;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    margin-left: 5px;
+
+}
+
+table .delete {
+    background-color: #FB4141;
+    padding: 7px 5px 5px 8px;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    margin-left: 5px;
+}
+
+
+.emp-profile-card {
+    background-color: #2E364A;
+    padding: 10px 30px 50px 30px;
+    margin-right: 380px;
+    margin-left: 380px;
+    border-radius: 3px;
+    margin-top: 142px;
+}
+
+.profile-img {
+    text-align: center;
+    margin-top: -76px;
+}
+
+.profile-emp-id {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Roboto';
+    padding: 8px;
+}
+
+.profile-emp-details {
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #F3F3F3;
+}
+
+/*######################################Person-id-card#########################################*/
+
+.person-id-card {
+    background-color: #2E364A;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    min-height: 467px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.person-id-image {
+    padding-top: 46px;
+    padding-left: 46px;
+}
+
+.pp-details {
+    padding-top: 24px;
+}
+
+.person-id-details {
+    padding-top: 45px;
+}
+
+.persion-id-quiets {
+    padding-top: 30px;
+    font-size: 14px;
+    padding-right: 59px;
+    text-align: justify;
+}
+
+.persion-id-all-details {
+    padding-top: 44px;
+    font-size: 14px;
+}
+
+.ppp-details {
+    margin-left: -20px;
+}
+
+/*###############################################################################*/
+
+
+.add-emp {
+    margin: 0px 120px 40px 120px;
+}
+
+.add-emp img {
+    margin: auto;
+    display: block;
+}
+
+input#image {
+    display: none;
+}
+
+.form-control,
+.form-control:focus {
+    background-color: #2E364A;
+    border: 2px solid #424A5E;
+    color: #9DBAD2;
+}
+
+
+.form-control:disabled {
+    background-color: #2E364A;
+}
+
+.form-group {
+    color: #9DBAD2;
+}
+
+.form-group .option {
+    background-color: #2E364A;
+    color: #9DBAD2;
+    border: 2px solid #424A5E;
+}
+
+select.custom-select {
+    color: #6C746E !important;
+}
+
+textarea.textarea-height {
+    min-height: 93px
+}
+
+.form-group .optionn {
+    background-color: #2E364A;
+    color: #9DBAD2;
+    border: 2px solid #424A5E;
+}
+
+textarea.textarea-heightt {
+    min-height: 93px
+}
+
+.atik {
+    background-color: aqua !imprtant;
+}
+
+.footer {
+    background-color: #2E364A;
+}
+
+
+
+.single-tabs {
+    background: #2E364A;
+    border-radius: 3px;
+    padding: 10px;
+    color: #fff
+}
+
+.single-tabs p {
+    margin-bottom: 0;
+    font-size: 12px;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.single-tabs p.all-margin-bottom {
+    margin-bottom: 8px;
+}
+
+span.emp-per {
+    margin-top: 0px !important;
+    font-size: 12px !important;
+}
+
+.single-tabs i {
+    font-size: 85px;
+    color: #1A2236;
+}
+
+.single-tabs p > span {
+    text-align: center;
+    display: block;
+    margin-top: 2px;
+    font-size: 22px;
+    margin-bottom: 4px;
+    font-family: 'Roboto'
+}
+
+.calender-prog {
+    background: #2E364A;
+    border-radius: 3px;
+    padding: 5px 15px 5px 15px;
+    color: #fff;
+    margin-top: 30px;
+    min-height: 342px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+table.table.table-bordered.text-light.cal-tbl tbody tr td,
+table.table.table-bordered.text-light.cal-tbl tbody tr th {
+    border-color: #1A2236;
+}
+
+table.table.table-bordered.text-light.cal-tbl tbody tr td {
+    font-size: 12px;
+    font-family: 'Roboto'
+}
+
+
+table.cal-tbl th {
+    border-top: 1px solid;
+}
+
+
+.today {
+    background: #00A651;
+}
+
+.emp-prog p.present {
+    background-color: #00A651;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.emp-prog p.absent {
+    background-color: #F04D56;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.emp-prog p.present-name {
+    font-size: 13px
+}
+
+/*############################################################################*/
+
+.progress {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+
+.progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-left {
+    left: 0;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress .progress-right {
+    right: 0;
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #1A2236;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.progress.red .progress-bar {
+    border-color: #F04D56;
+}
+
+.progress.red .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+.progress.green .progress-bar {
+    border-color: #00A651;
+}
+
+.progress.green .progress-left .progress-bar {
+    animation: loading-4 1.2s linear forwards 1.8s;
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes loading-4 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .progress {
+        margin-bottom: 20px;
+    }
+}
+
+/*############################################################################*/
+
+.atten-all-month {
+    background-color: #2E364A;
+    min-height: 463px;
+    padding: 7px 23px 23px 23px;
+    border-radius: 3px;
+    margin-top: 16px;
+}
+
+
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #1A2236;
+    border-color: #fff;
+}
+
+
+
+a#nav-feb-tab,
+a#nav-mar-tab,
+a#nav-apr-tab,
+a#nav-may-tab,
+a#nav-jun-tab,
+a#nav-jul-tab,
+a#nav-aug-tab,
+a#nav-sep-tab,
+a#nav-oct-tab,
+a#nav-nov-tab,
+a#nav-dec-tab,
+a#nav-total-tab,
+a#nav-jan-tab {
+    color: #fff;
+}
+
+.monthly-dates {
+    background-color: #1A2236;
+    min-height: 250px;
+    max-height: 250px;
+    border-radius: 3px;
+    overflow: hidden;
+    overflow-y: auto;
+    border: 2px solid #424A5E;
+        
+}
+
+.month-title {
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto';
+    padding: 13px;
+}
+
+.monthly-value {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.each-date {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'roboto';
+    background-color: #2E364A;
+    margin: 10px;
+    padding: 6px;
+}
+
+/*############################################################################*/
+
+
+
+
+/*
+font-family: 'Roboto', ;
+font-family: 'Lato', ;
+*/
